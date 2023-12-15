@@ -40,6 +40,8 @@ def volgende(gecodeerd, codewoord):
 
 
 # We zetten in alle functies de nummers om naar strings -> anders 1+2 wordt 3 ipv 12.
+# Ik zet die dingen met assertion erros effe als comment want anders gaat die stoppen bij runnen bij de eerste error en
+# kunnen we de rest niet meer testen.
 print(reduceer('HUNTSVILLEX')) #Output: HUNTSVILEX
 print(reduceer('TRICHINOPHOBIA')) #Output: TRICHIOPBA
 # print(reduceer('ABCDEFGHIJKLNM')) # Output: GEEN assertion error

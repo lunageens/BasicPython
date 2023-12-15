@@ -152,6 +152,7 @@ De Jupiter-C was een Amerikaanse onderzoeksraket die ontwikkeld werd als opvolge
 De Jupiter-C maakte deel uit van het IRBM-project en het aartal gefabriceerde raketten werd beschouwd als en streng bewaard militair geheim. Daarom werden de serienummers niet zomaar op de zijkant van de raketten geschilderd, maar werden ze gecodeerd met een eenvoudige transformatiecodering die het personeel makkelijk kon onthouden. Het codewoord voor de transformatie werd ontleend aan de locatie van de miltair basis waar de raket werd ontworpen en getest: Huntsvie, Alabama.
 
 H	U	N	T	S	V	I	L	E	X
+
 1	2	3	4	5	6	7	8	9	0
 
 Door in het woord Huntsville de dubbele letters te schrappen en achteraan een X toe te voegen, verkreeg men een codewoord van tien letters: HMTSVILEX. Daarin stond de letter H voor het cijfer 1, de letter U voor het cijfer 2, … de eter voor E het cijfer 9 en de letter X voor het cijfer 0. Op die manier had men bijvoorbeeld het gecodeerde serienummer UE geverfd op de zijkant van de aangepaste versie van de Jupiter-C die gebruikt werd om de Explorer 1 te lanceren, wat aangaf da die raket serienummer 29 had (U-->2, E-->9). De volgende versie van de Jupiter-C raket werd dan beschilderd met NX, de gecodeerde versie van het serienummer 30 (N-->3, X-->0).
