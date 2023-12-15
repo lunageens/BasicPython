@@ -1,6 +1,6 @@
 # Python Oefeningen voor Sam
 
-Eerst een korte uitleg over hoe dit (en de meeste andere) Python-projecten gestructureerd zijn. Stel je voor dat ons project een boek is. Eerst een korte uitleg over hoe dit (en de meeste andere) Python-projecten gestructureerd zijn. Stel je voor dat ons project een boek is.
+Eerst een korte uitleg over hoe dit (en de meeste andere) Python-projecten gestructureerd zijn. Stel je voor dat ons project een boek is. 
 
 **README.md:**  Eerst het document waar we nu in zitten. Het README-bestand is als de samenvatting op de achterkant van een boek. Het vertelt anderen waar je project over gaat, hoe je het moet opzetten en hoe je het gebruikt. Het is het eerste wat mensen meestal lezen, zodat ze begrijpen wat je project doet en hoe ze erdoorheen kunnen navigeren. In onze README vinden we de beschrijving van de verschillende oefeningen.
 
