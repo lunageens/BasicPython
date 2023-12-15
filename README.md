@@ -144,3 +144,53 @@ BcdE
 RstU
 AbcD
 </pre>
+
+## 4. Jupiter-C
+
+De Jupiter-C was een Amerikaanse onderzoeksraket die ontwikkeld werd als opvolger van de Jupiter-A. Ze werd in 1965 en 1957 gebruikt voor drie suboritale ruimtevluchten om te testen of de neuskegel die later gemonteerd zou worden op de meer geavanceerde en mobiele PGM-19 Jupiter raket het zou houden bij terugkeer in de atmosfeer. Als lid van de famile van Redstone-raketten werd ook de Jupiter onworpen door de Army Ballistic Missilee Agency (ABMA), onder leiding van Wernher von Braun.
+
+De Jupiter-C maakte deel uit van het IRBM-project en het aartal gefabriceerde raketten werd beschouwd als en streng bewaard militair geheim. Daarom werden de serienummers niet zomaar op de zijkant van de raketten geschilderd, maar werden ze gecodeerd met een eenvoudige transformatiecodering die het personeel makkelijk kon onthouden. Het codewoord voor de transformatie werd ontleend aan de locatie van de miltair basis waar de raket werd ontworpen en getest: Huntsvie, Alabama.
+
+H	U	N	T	S	V	I	L	E	X
+1	2	3	4	5	6	7	8	9	0
+
+Door in het woord Huntsville de dubbele letters te schrappen en achteraan een X toe te voegen, verkreeg men een codewoord van tien letters: HMTSVILEX. Daarin stond de letter H voor het cijfer 1, de letter U voor het cijfer 2, … de eter voor E het cijfer 9 en de letter X voor het cijfer 0. Op die manier had men bijvoorbeeld het gecodeerde serienummer UE geverfd op de zijkant van de aangepaste versie van de Jupiter-C die gebruikt werd om de Explorer 1 te lanceren, wat aangaf da die raket serienummer 29 had (U-->2, E-->9). De volgende versie van de Jupiter-C raket werd dan beschilderd met NX, de gecodeerde versie van het serienummer 30 (N-->3, X-->0).
+
+### Opgave
+
+Een **serienummer** is een natuurlijk getal (int) en een **codewoord**  die enkel bestaat uit letters (zowel hoofdletters als kleine letters zijn toegelaten). 
+
+Beschouw nu een transformatiecodering voor serienummers die werkt met een gegeven codewoord. In eerste instantie wordt het codewoord gereduceerd door enkel het eerste voorkomen van elke letter over te houden, waarbij geen onderscheid gemaakt wordt tussen hoofdletters en kleine letters. Op die manier wordt het codewoord TROCHINOPHOBIA bijvoorbeeld gereduceerd tot TRICHNOPBA. Dit **gereduceerde codewoord** moet uit tien letters bestaan, waarvan de eerste letter staat voor het cijfer 1, de tweede voor het cijfer 2, ... de voorlaatste voor cijfer 9 en de laatste voor het cijfer 0. Gevraagd wordt: 
+- Schrijf een functie reduceer waaraan een codewoord (str) moet doorgegeven worden. De functie moet in hoofdieters het gereduceerde codewoord (str) teruggeven.
+- Schrijf een functie codeer waaraan een serienummer (int) en en codewoord (str) moeten doorgegeven worden. De functie moet in hoofdeters de gecodeerd versie (str) van het gegeven serienummer teruggeven die bekomen wordt door toepassing van de ransformatiecodering voor serienummers met het gegeven codewoord.
+- Schrijf een functie decodeer waaraan twee argumenten moeten doorgegeven worden: i) de gecodeerde versie van een serienummer (str) die bekomen werd door toepassing van de transtomatiecodering voor serienummers met een codewoord en ii) het codewoord dat voor de transformatie gebruikt werd. De functie moet het orginele serienummer (int) teruggeven.
+- Schrijf een functie volgende waaraan wee argumenten moeten doorgegeven worden: i) de gecodeerde versie van een serienummer (str) die bekomen werd door toepassing van de transfomatiecodering voor serienummers met een codewoord en ii) het codewoord dat voor de transformatie gebruikt werd. De functie moet in hoofdletters de gecodeerde versie van het volgende serienummer teruggeven, waarbij het gegeven codewoord ook voor het volgende seenummer gebruikt wordt. Als bijvoorbeed de gecodeerde versie van het serienummer 29 wordt doorgegeven dan moet de functi de gecodeerde versie van het volgende serienummer 29 +1 = 30 teruggeven. Als de gecodeerde versie van het serienummer 99 word doorgegeven dan moet de functie de gecodeerde versie van het volgende serienummer 99+1=100 teruggeven. 
+
+De functies mogen geen onderscheid maken tussen hoofdletters en kleine letters in de codewoorden en de gecodeerde serienummers die eraan doorgegeven worden.
+
+Als aan de functies codeer, decodeer of volgende een codeworod wordt doorgegeven waarvan de gereduceerde versie niet uit 10 letters bestaat, dan moet een AssertionError opgeworpen worden met de boodschap ongeldig codewoord.
+
+### Voorbeeld
+
+<pre>
+>>> reduceer('HUNTSVILLEX')
+'HUNTSVILEX'
+>>> reduceerd('TRICHINOPHOBIA')
+'TRICHNOPBA'
+
+>>> codeer(29, 'HUNTSVILLEX')
+'UE'
+>>> codeer(63, 'TRICHINOPHOBIA')
+'NI'
+
+>>> decodeer('UE', 'HUNTSVILLEX')
+29
+>>> decodeer('NI', 'TRICHINOPHOBIA')
+63
+
+>>> volgende('UE', 'HUNTSVILLEX')
+'NX'
+>>> volgende('NI', 'TRICHINOPHOBIA')
+'NC'
+</pre>
+
