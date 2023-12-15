@@ -27,7 +27,7 @@ Gebruik het commando git clone gevolgd door de URL van de repository om dan effe
 <pre>
 git clone https://github.com/lunageens/BasicPython.git
 </pre>
-
+Dan kan je dit mapje gewoon opendoen in je IDE (denk dat je PyCharm gebruikt) en dan staat alle code daar al. 
 
 
 ## 1. Spinnen en Muggen
