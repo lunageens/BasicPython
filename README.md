@@ -172,7 +172,7 @@ Als aan de functies codeer, decodeer of volgende een codewoord wordt doorgegeven
 
 ### Voorbeeld
 
-<pre>
+```python
 >>> reduceer('HUNTSVILLEX')
 'HUNTSVILEX'
 >>> reduceer('TRICHINOPHOBIA')
@@ -192,5 +192,51 @@ Als aan de functies codeer, decodeer of volgende een codewoord wordt doorgegeven
 'NX'
 >>> volgende('NI', 'TRICHINOPHOBIA')
 'NC'
-</pre>
+```
 
+## 5. Honkbal
+
+Honkbal is een balsport waarin twee teams van negen spelers het tegen elkaar opnemen. De sport is vooral populair in de Verenigde Staten, Canada, Mexico, de Caraïben en grote delen van Azië. In Europa is de sport minder populair. Een wedstrijd bestaat uit negen **innings**. Elke inning bestaat uit twee speelhelften. In de ene speelhelft verdedigt het thuisspelende team in het veld en is het bezoekende team in de aanval. In de andere speelhelft zijn de rollen omgedraaid. Alleen het aanvallende team kan punten scoren.
+
+![Overview](img/Honkbal_Overview.png)
+
+Het speelveld bestaat uit vier **honken** in de vorm van een ruit, aangegeven door de witte vlakken in bovenstaande figuur. Op de thuisplaats (witte vlak onderaan) is telkens een volgende speler van het aanvallende team aan slag. Deze speler wordt de **slagman** genoemd. Een **werper** van het verdedigende team gooit een bal naar de thuisplaats waar de slagman van het aanvallende team hem moet proberen te raken. Als de slagman de bal kan raken, dan moet hij in tegenwijzerzin één voor één de honken proberen te bereiken vóór het verdedigende team de bal bij het honk kan brengen. Als er bij de slag reeds honken bezet waren door andere aanvallende spelers, dan mogen deze ook proberen om de volgende honken te bereiken (in tegenwijzerzin). Wanneer een aanvallende speler alle vier de honken is gepasseerd, dan scoort hij één punt. Wanneer een slagman alle honken in zijn eigen slagbeurt kan passeren, dan heet dat een **homerun**.
+
+## Opdracht
+
+Bij het spelletje honkbal kunnen enkel het eerste, het tweede en het derde honk bezet worden door aanvallende spelers. Daarom stellen we de **bezette honken** voor als een reeks (list of tuple) die enkel de getallen 1 (eerste honk), 2 (tweede honk) en 3 (derde honk) kan bevatten. De getallen worden altijd in stijgende volgorde opgelijst.
+
+We houden enkel rekening met **n-slagen**, waarbij \( n \in \mathbb{N} \) en \( 0 \leq n \leq 4 \). Bij een 0-slag kan de slagman de bal niet raken, en mag hij het veld niet betreden (waardoor hij ook geen punten kan scoren). Bij een n-slag ( \( 0 < n \leq 4 \) ) lopen alle aanvallende spelers op het veld (de slagman en alle spelers die reeds honken bezet hielden) n honken vooruit in tegenwijzerzin. Alle spelers die hierbij de thuishplaats bereiken, scoren een punt en stappen uit het veld. Een homerun is dus gelijk aan een 4-slag.
+
+![Slagen](img/Honkbal_Slagen.png)
+
+Bij aanvang van een speelhelft zijn er nog geen honken bezet, wat kan worden voorgesteld door een lege reeks (linkse situatie in bovenstaande figuur). Als de eerste slagman een 2-slag opentekenen, dan loopt hij over het eerste honk naar het tweede honk. Als de tweede slagman daarna een 1-slag doet, dan loopt hij naar het eerste honk en loopt de eerste slagman door naar het derde honk. Als de derde slagman daarna een 3-slag doet, dan loopt hij naar het derde honk en scoren de twee aanvallende spelers die reeds het eerste en derde honk bezet hielden elk één punt omdat ze de thuishplaats bereiken.
+
+### Gevraagd wordt:
+
+- Schrijf een functie `slag` waaraan een getal \( n \) \( (n \in \mathbb{N}, 0 \leq n \leq 4) \) moet doorgegeven worden. De functie heeft ook nog een tweede optionele parameter `bezet` waaraan een reeks (list of tuple) kan doorgegeven worden, die aangeeft welke honken bezet waren vóór de slagman op het veld kwam. Als er geen expliciete waarde wordt doorgegeven aan de parameter `bezet`, dan zijn er nog geen honken bezet. De functie moet een tuple teruggeven met twee elementen die de spelsituatie beschrijven nadat de slagman een n-slag gedaan heeft: i) de punten (int) die door alle aanvallende spelers behaald werden bij de slag en ii) de honken die bezet zijn (list) na de slag.
+- Schrijf een functie `inning` waaraan een reeks (list of tuple) van getallen (int) uit het interval [0, 4] moet doorgegeven worden. Deze getallen stellen de opeenvolgende n-slagen voor die binnen één speelhelft gedaan worden. De functie moet een tuple met twee waarden teruggeven: i) de punten (int) die het aanvallende team behaald heeft tijdens de speelhelft en ii) de honken die bezet zijn (list) op het einde van de speelhelft.
+
+#### Voorbeeld
+
+```python
+>>> slag(2)
+(0, [2])
+>>> slag(0, [1, 3])
+(0, [1, 3])
+>>> slag(1, [1, 3])
+(1, [1, 2])
+>>> slag(2, bezet=[1, 3])
+(1, [2, 3])
+>>> slag(3, bezet=[1, 3])
+(2, [3])
+>>> slag(4, bezet=[1, 3])
+(3, [])
+
+>>> inning([0, 1, 2, 3, 4])
+(4, [])
+>>> inning([4, 3, 2, 1, 0])
+(2, [1, 3])
+>>> inning([1, 1, 2, 1, 0, 0, 1, 3, 0])
+(5, [3])
+```
