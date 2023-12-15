@@ -27,7 +27,7 @@ else:
         #Hoeveel nieuwe spinnen deze week?
         nieuwe_spinnen = int(opgegeten_muggen / 20) # nu moeten we terug afronden naar beneden
 
-        #Pas variableen aan voor volgende week
+        #Pas variablen aan voor volgende week
         aantal_muggen = aantal_muggen + nieuwe_muggen - opgegeten_muggen
         aantal_spinnen = aantal_spinnen + nieuwe_spinnen
 
