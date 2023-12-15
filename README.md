@@ -86,7 +86,7 @@ Schrijf een functie transleer_orf die een orf omzet naar aminozuur-sequentie, je
 
 ## 3. Woordevoluties
 
-Als je de letters van het woord FREUD op een uniforme manier doorheen het alfabet laat evolueren dan bekome je het woord COBRA. Daarbij laten we na de letter Z terug de letter A volgen.
+Als je de letters van het woord FREUD op een uniforme manier doorheen het alfabet laat evolueren dan bekom je het woord COBRA. Daarbij laten we na de letter Z terug de letter A volgen.
 
 ![Hier is een afbeelding van Sigmund Freud naast een tabel met het alfabet en de evolutie van het woord FREUD naar COBRA.](img/Woordevoluties_FreudToCobra.png)
 
