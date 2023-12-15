@@ -164,18 +164,18 @@ Beschouw nu een transformatiecodering voor serienummers die werkt met een gegeve
 - Schrijf een functie reduceer waaraan een codewoord (str) moet doorgegeven worden. De functie moet in hoofdieters het gereduceerde codewoord (str) teruggeven.
 - Schrijf een functie codeer waaraan een serienummer (int) en en codewoord (str) moeten doorgegeven worden. De functie moet in hoofdeters de gecodeerd versie (str) van het gegeven serienummer teruggeven die bekomen wordt door toepassing van de ransformatiecodering voor serienummers met het gegeven codewoord.
 - Schrijf een functie decodeer waaraan twee argumenten moeten doorgegeven worden: i) de gecodeerde versie van een serienummer (str) die bekomen werd door toepassing van de transtomatiecodering voor serienummers met een codewoord en ii) het codewoord dat voor de transformatie gebruikt werd. De functie moet het orginele serienummer (int) teruggeven.
-- Schrijf een functie volgende waaraan wee argumenten moeten doorgegeven worden: i) de gecodeerde versie van een serienummer (str) die bekomen werd door toepassing van de transfomatiecodering voor serienummers met een codewoord en ii) het codewoord dat voor de transformatie gebruikt werd. De functie moet in hoofdletters de gecodeerde versie van het volgende serienummer teruggeven, waarbij het gegeven codewoord ook voor het volgende seenummer gebruikt wordt. Als bijvoorbeed de gecodeerde versie van het serienummer 29 wordt doorgegeven dan moet de functi de gecodeerde versie van het volgende serienummer 29 +1 = 30 teruggeven. Als de gecodeerde versie van het serienummer 99 word doorgegeven dan moet de functie de gecodeerde versie van het volgende serienummer 99+1=100 teruggeven. 
+- Schrijf een functie volgende waaraan wee argumenten moeten doorgegeven worden: i) de gecodeerde versie van een serienummer (str) die bekomen werd door toepassing van de transfomatiecodering voor serienummers met een codewoord en ii) het codewoord dat voor de transformatie gebruikt werd. De functie moet in hoofdletters de gecodeerde versie van het volgende serienummer teruggeven, waarbij het gegeven codewoord ook voor het volgende seenummer gebruikt wordt. Als bijvoorbeed de gecodeerde versie van het serienummer 29 wordt doorgegeven dan moet de functie de gecodeerde versie van het volgende serienummer 29 +1 = 30 teruggeven. Als de gecodeerde versie van het serienummer 99 word doorgegeven dan moet de functie de gecodeerde versie van het volgende serienummer 99+1=100 teruggeven. 
 
 De functies mogen geen onderscheid maken tussen hoofdletters en kleine letters in de codewoorden en de gecodeerde serienummers die eraan doorgegeven worden.
 
-Als aan de functies codeer, decodeer of volgende een codeworod wordt doorgegeven waarvan de gereduceerde versie niet uit 10 letters bestaat, dan moet een AssertionError opgeworpen worden met de boodschap ongeldig codewoord.
+Als aan de functies codeer, decodeer of volgende een codewoord wordt doorgegeven waarvan de gereduceerde versie niet uit 10 letters bestaat, dan moet een AssertionError opgeworpen worden met de boodschap ongeldig codewoord.
 
 ### Voorbeeld
 
 <pre>
 >>> reduceer('HUNTSVILLEX')
 'HUNTSVILEX'
->>> reduceerd('TRICHINOPHOBIA')
+>>> reduceer('TRICHINOPHOBIA')
 'TRICHNOPBA'
 
 >>> codeer(29, 'HUNTSVILLEX')
