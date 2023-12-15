@@ -4,6 +4,8 @@ Eerst een korte uitleg over hoe dit (en de meeste andere) Python-projecten gestr
 
 **README.md:**  Eerst het document waar we nu in zitten. Het README-bestand is als de samenvatting op de achterkant van een boek. Het vertelt anderen waar je project over gaat, hoe je het moet opzetten en hoe je het gebruikt. Het is het eerste wat mensen meestal lezen, zodat ze begrijpen wat je project doet en hoe ze erdoorheen kunnen navigeren. In onze README vinden we de beschrijving van de verschillende oefeningen.
 
+**img**: In de map 'img' vindt je afbeeldingen, die gebruikt worden door andere files zoals, in dit geval, de README.md. 
+
 **src:** : In de map 'src' vind je de code van het project. Dit is de ruggengraat van je project waar je al je belangrijkste Python codebestanden (.py) bewaart. Deze bronmap bevat twee submappen: main en test.
 
 **main:** Een wordt altijd main genoemd, en het is het startpunt van je project. Het bevat de code die je mij hebt gevraagd om op te lossen - de oplossingen van de oefeningen.
@@ -84,19 +86,17 @@ Schrijf een functie transleer_orf die een orf omzet naar aminozuur-sequentie, je
 
 ## 3. Woordevoluties
 
-Woord evoluties
-
 Als je de letters van het woord FREUD op een uniforme manier doorheen het alfabet laat evolueren dan bekome je het woord COBRA. Daarbij laten we na de letter Z terug de letter A volgen.
 
-[Hier is een afbeelding van Sigmund Freud naast een tabel met het alfabet en de evolutie van het woord FREUD naar COBRA.]
+![Hier is een afbeelding van Sigmund Freud naast een tabel met het alfabet en de evolutie van het woord FREUD naar COBRA.](img/Woordevoluties_FreudToCobra.png)
 
 Op dezelfde manier verkrijg je FUSION uit LAYOUT.
 
-[Hier is een tabel die de evolutie van het woord LAYOUT naar FUSION laat zien.]
+![Hier is een tabel die de evolutie van het woord LAYOUT naar FUSION laat zien.](img/Woordevoluties_LayoutToFusion.png)
 
 We kunnen dezelfde techniek zelfs toepassen om woorden te vertalen.
 
-[Hier is een tabel die laat zien hoe een woord getransformeerd kan worden.]
+![Hier is een tabel die laat zien hoe een woord getransformeerd kan worden.](img/Woordevoluties_YesToOui.png)
 
 Dit kan toch echt wel geen toeval zijn?
 
@@ -114,17 +114,17 @@ De evolutie van het gegeven woord naar het woord dat begint met de gegeven lette
 
 Invoer:
 <pre>
-  FREUD
-  C
+FREUD
+C
 </pre>
 
 Uitvoer:
 <pre>
-  FghijklmnopqrstuvwxyzAbC
-  RstuvwxyzabcdefghiJklmnO
-  EfgHiJklmnopqrstuvwxyzAaB
-  UvwxyzabcdefghiJklmnopqR
-  DefghijKlmnopqrstuvwxyzZA
+FghijklmnopqrstuvwxyzAbC
+RstuvwxyzabcdefghiJklmnO
+EfgHiJklmnopqrstuvwxyzAaB
+UvwxyzabcdefghiJklmnopqR
+DefghijKlmnopqrstuvwxyzZA
 </pre>
 
 
@@ -132,15 +132,15 @@ Uitvoer:
 
 Invoer:
 <pre>
-  COBRA
-  F
+COBRA
+F
 </pre>
 
 Uitvoer:
 <pre>
-  CdeF
-  OpqR
-  BcdE
-  RstU
-  AbcD
+CdeF
+OpqR
+BcdE
+RstU
+AbcD
 </pre>

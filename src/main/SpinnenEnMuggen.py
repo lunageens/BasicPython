@@ -7,9 +7,9 @@ temperatuur =  int(input("Geef de temperatuur in graden Celcius als geheel getal
 
 # Check eerst: Temperatuur niet te warm of te koud?
 if temperatuur < 18:
-        print("Het is nu te koud voor muggen")
+        print("Het is nu te koud voor muggen.")
 elif temperatuur >= 40:
-        print("Het is nu te warm voor spinnen")
+        print("Het is nu te warm voor spinnen.")
 else:
     # Print resultaten Week 0
     print("week 0 " + str(aantal_muggen) + " " + str(aantal_spinnen)) #String maken van integers
