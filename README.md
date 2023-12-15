@@ -203,7 +203,7 @@ Honkbal is een balsport waarin twee teams van negen spelers het tegen elkaar opn
 
 Het speelveld bestaat uit vier **honken** in de vorm van een ruit, aangegeven door de witte vlakken in bovenstaande figuur. Op de thuisplaats (witte vlak onderaan) is telkens een volgende speler van het aanvallende team aan slag. Deze speler wordt de **slagman** genoemd. Een **werper** van het verdedigende team gooit een bal naar de thuisplaats waar de slagman van het aanvallende team hem moet proberen te raken. Als de slagman de bal kan raken, dan moet hij in tegenwijzerzin één voor één de honken proberen te bereiken vóór het verdedigende team de bal bij het honk kan brengen. Als er bij de slag reeds honken bezet waren door andere aanvallende spelers, dan mogen deze ook proberen om de volgende honken te bereiken (in tegenwijzerzin). Wanneer een aanvallende speler alle vier de honken is gepasseerd, dan scoort hij één punt. Wanneer een slagman alle honken in zijn eigen slagbeurt kan passeren, dan heet dat een **homerun**.
 
-## Opdracht
+### Opdracht
 
 Bij het spelletje honkbal kunnen enkel het eerste, het tweede en het derde honk bezet worden door aanvallende spelers. Daarom stellen we de **bezette honken** voor als een reeks (list of tuple) die enkel de getallen 1 (eerste honk), 2 (tweede honk) en 3 (derde honk) kan bevatten. De getallen worden altijd in stijgende volgorde opgelijst.
 
