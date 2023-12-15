@@ -84,3 +84,63 @@ Schrijf een functie transleer_orf die een orf omzet naar aminozuur-sequentie, je
 
 ## 3. Woordevoluties
 
+Woord evoluties
+
+Als je de letters van het woord FREUD op een uniforme manier doorheen het alfabet laat evolueren dan bekome je het woord COBRA. Daarbij laten we na de letter Z terug de letter A volgen.
+
+[Hier is een afbeelding van Sigmund Freud naast een tabel met het alfabet en de evolutie van het woord FREUD naar COBRA.]
+
+Op dezelfde manier verkrijg je FUSION uit LAYOUT.
+
+[Hier is een tabel die de evolutie van het woord LAYOUT naar FUSION laat zien.]
+
+We kunnen dezelfde techniek zelfs toepassen om woorden te vertalen.
+
+[Hier is een tabel die laat zien hoe een woord getransformeerd kan worden.]
+
+Dit kan toch echt wel geen toeval zijn?
+
+### Invoer
+
+Op de eerste regel staat een woord dat enkel bestaat uit hoofdletters. Op de tweede regel staat een hoofdletter.
+
+### Uitvoer
+
+De evolutie van het gegeven woord naar het woord dat begint met de gegeven letter, als we de letters op een uniforme manier doorheen het alfabet laten evolueren. De letters van het gegeven woord worden aan de linkerkant onder elkaar uitgeschreven in hoofdletters. De letters van het woord dat begint met de gegeven letter en dat men bekomt na evolutie, worden aan de rechterkant onder elkaar uitgeschreven in kleine letters, waarbij na de laatste letter van het alfabet terug de eerste letter volgt.
+
+### Voorbeeld
+
+**Eerste Voorbeeld:**
+
+Invoer:
+<pre>
+  FREUD
+  C
+</pre>
+
+Uitvoer:
+<pre>
+  FghijklmnopqrstuvwxyzAbC
+  RstuvwxyzabcdefghiJklmnO
+  EfgHiJklmnopqrstuvwxyzAaB
+  UvwxyzabcdefghiJklmnopqR
+  DefghijKlmnopqrstuvwxyzZA
+</pre>
+
+
+**Tweede Voorbeeld:**
+
+Invoer:
+<pre>
+  COBRA
+  F
+</pre>
+
+Uitvoer:
+<pre>
+  CdeF
+  OpqR
+  BcdE
+  RstU
+  AbcD
+</pre>
